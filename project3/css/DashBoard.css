@@ -1,0 +1,594 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 240px;
+    height: 48px;
+    border-right: 1px solid rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+}
+
+.sreach {
+    display: none;
+}
+
+#logo {
+    width: 80px;
+    height: 16px;
+    margin-left: 16px;
+}
+
+section {
+    display: flex;
+    height: calc(100vh - 48px);
+}
+
+.container {
+    width: 240px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: relative;
+}
+
+#workSpaces {
+    display: block;
+    margin: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container .items {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.container .items:hover {
+    background-color: #f0f0f0;
+}
+
+.container .items img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.container .textIcon {
+    font-size: 14px;
+    color: #333;
+}
+
+.container hr {
+    margin: 8px 16px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.main {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1),
+        0 -3px 10px 0 rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #ccc;
+}
+
+#boards_icon {
+    width: 26.99px;
+    height: 19.95px;
+}
+
+#workspacess {
+    font-size: 31.25px;
+    line-height: 38.4px;
+}
+
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerMain>div:first-child {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    padding-right: 16px;
+    margin-right: 16px;
+}
+
+.headerMain img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#share,
+#Export {
+    width: 55.26px;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 0;
+}
+
+#share {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#Export {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.headerMain select {
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bodymain {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creatNewBoard {
+    padding: 24px;
+}
+
+.windowNewBoard {
+    position: relative;
+    flex-wrap: wrap;
+    display: none;
+    width: 498px;
+    height: 514px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.windowCreatHeader {
+    width: calc(100% - 32px);
+    height: 63px;
+    background-color: #DEE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0 auto;
+
+}
+
+
+.windowCreatHeaderSpan {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.windowCreatHeader img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#backGroundWindowSpan {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 16px;
+}
+
+.itemsWindowBackGround {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+}
+
+.backGound {
+    width: 108.5px;
+    height: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.backGound img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.colorWindow {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+}
+
+.colorBackGround {
+    width: 69.66px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.colorBackGround img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.windowFooter {
+    padding: 16px;
+}
+
+#text_board_title {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+#text_board_title:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.buttonFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+#close,
+#create {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#close {
+    background-color: #ccc;
+    border: none;
+}
+
+#create {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+\updateWindow .windowUpdateBoard {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.windowUpdateBoard {
+    position: relative;
+    display: none;
+    width: 498px;
+    height: 514px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25),
+        0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.windowUpdateHeader {
+    width: calc(100% - 32px);
+    height: 63px;
+    background-color: #DEE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0 auto;
+}
+
+.windowUpdateHeaderSpan {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.windowUpdateHeader img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+/* Label Background của Update Board */
+#backGroundWindowSpan {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 16px;
+}
+
+/* Danh sách hình nền */
+.itemsWindowBackGround {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+}
+
+.backGound {
+    width: 108.5px;
+    height: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.backGound img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Danh sách màu nền */
+.colorWindow {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+}
+
+.colorBackGround {
+    width: 69.66px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.colorBackGround img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nội dung phần footer của update board */
+.windowFooter {
+    padding: 16px;
+}
+
+#board_title_update {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+#text_board_title_update {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+#text_board_title_update:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Phần nút ở cuối modal */
+.buttonFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+#close_update,
+#update {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+#close_update {
+    background-color: #ccc;
+}
+
+#update {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.board {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonCreat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    padding: 12px 24px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.buttonCreat:hover {
+    background-color: #e9e9e9;
+    border-color: #999;
+}
+
+.footerMain {
+    padding: 16px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.textFooterMain {
+    display: flex;
+    align-items: center;
+    font-size: 31.25px;
+    line-height: 38.4px;
+    font-weight: bold;
+    color: #333;
+}
+
+.textFooterMain img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.itemsFooter {
+    margin-top: 8px;
+}
+
+.itemsImportantBoards {
+    padding: 8px;
+    background-color: #efefef;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+#mobile-menu {
+    display: none;
+    position: absolute;
+    top: 48px;
+
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+}
+
+#mobile-menu .menu-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#mobile-menu .menu-item:last-child {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+
+    .sreach {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .sreach img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .main {
+        width: 100%;
+        box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.08),
+            0 -2px 6px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .headerMain div:last-child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+}
+
+/* edit boardboard */
+/* Thêm vào DashBoard.css */
+.board-item {
+    height: 100px;
+    width: 200px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.board-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.board-item span {
+    font-size: 18px;
+    color: #172b4d;
+}
+
+.edit-board {
+    background: #0079bf;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.edit-board:hover {
+    background: #005a8c;
+}

@@ -1,0 +1,454 @@
+.taskModal {
+    width: 769px;
+    height: 497px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.process {
+    width: 700px;
+    height: 58px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.process span:nth-of-type(1) {
+    display: block;
+
+    width: 660px;
+    height: 36px;
+    border-radius: 4px;
+    margin-left: 25px;
+    margin-top: 6px;
+    line-height: 24px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.process span:nth-of-type(2) {
+    margin-left: 25px;
+    margin-top: 6px;
+}
+
+.process select {
+    border-radius: 3px;
+    width: 103.39px;
+    height: 20px;
+    background-color: #DCDFE4;
+}
+
+.bodyTaskModal {
+    width: 552px;
+    height: 359px;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.description div:nth-of-type(1) {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.description textarea {
+    width: 512px;
+    height: 275px;
+    margin-left: 35px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(189, 172, 172);
+    padding: 10px;
+}
+
+.optionMore {
+    margin-left: 5px;
+}
+
+.buttonTaskModalFooter button:nth-of-type(1) {
+    width: 55.75px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    background-color: #0C66E4;
+    color: white;
+}
+
+.buttonTaskModalFooter button:nth-of-type(2) {
+    width: 55.75px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+.detailModal-dates {
+    width: 304px;
+    height: 560px;
+    border-radius: 8px;
+    border: 1px solid #8590A2;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+
+.dates-header .header-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.dates-header .header-top b {
+    font-size: 14px;
+    color: #44546F;
+
+}
+
+.dates-header .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.dates-header .header-bottom b {
+    font-size: 15px;
+    color: #172B4D;
+}
+
+.dates-content .content-top {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.dates-content .content-top div {
+    width: 40px;
+    height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dates-content .dates-spanColor {
+    color: #44546F;
+    font-size: 12px;
+    font-weight: 700px;
+}
+
+.dates-content .dates-backgroundblue {
+    background-color: #E9F2FF;
+    color: #0C66E4;
+    margin-bottom: 5px;
+}
+
+.dates-content .dates-backgroundgrey {
+    background-color: white;
+    color: #626F86;
+}
+
+.dates-content .dates-backgroundblack {
+    background-color: white;
+    color: #172B4D;
+
+}
+
+.content-bottom div {
+    font-size: 14px;
+    font-weight: 700;
+    color: #44546F;
+    margin: 10px 0px;
+}
+
+.content-bottom .input-start {
+    border-radius: 3px;
+    border: 1px solid #8590A2;
+    width: 90px;
+    height: 32px;
+}
+
+.content-bottom .input-date {
+    width: 90px;
+    height: 32px;
+    border: none;
+    background-color: rgb(244, 241, 241);
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.content-bottom .input-date::placeholder {
+    padding-left: 5px;
+}
+
+.dates-footer .button-save {
+    background-color: #0C66E4;
+    font-size: 14px;
+    color: white;
+    width: 280px;
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+}
+
+.dates-footer .button-remove {
+    background-color: #ebebec;
+    font-size: 14px;
+    color: #172B4D;
+    width: 280px;
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+}
+
+.modalCreatLabel {
+    width: 304px;
+    height: 309px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headModalCreat {
+    display: flex;
+    width: 304px;
+    height: 48px;
+    justify-content: space-around;
+}
+
+.headModalCreat span {
+    margin-top: 8px;
+}
+
+.headModalCreat img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.bodyModalCreat {
+    width: 304px;
+    height: 261px;
+}
+
+.bodyModalCreat span:nth-of-type(1) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.bodyModalCreat input {
+    width: 280px;
+    height: 36px;
+    margin-left: 12px;
+    margin-top: 12px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.bodyModalCreat span:nth-of-type(2) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+.selectColor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    width: 292px;
+    height: auto;
+    gap: 9px;
+}
+
+.selectColor button {
+    width: 50px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+}
+
+.selectColor button:nth-of-type(1) {
+    background-color: #DFD8FD;
+    /* Màu tím nhạt */
+}
+
+.selectColor button:nth-of-type(2) {
+    background-color: #FFD5D2;
+    /* Màu đỏ nhạt */
+}
+
+.selectColor button:nth-of-type(3) {
+    background-color: #FEDEC8;
+    /* Màu cam nhạt */
+}
+
+.selectColor button:nth-of-type(4) {
+    background-color: #F8E6A0;
+    /* Màu vàng nhạt */
+}
+
+.selectColor button:nth-of-type(5) {
+    background-color: #BAF3DB;
+    /* Màu xanh lá nhạt */
+}
+
+.selectColor button:nth-of-type(6) {
+    background-color: #9F8FEF;
+    /* Màu tím đậm */
+}
+
+.selectColor button:nth-of-type(7) {
+    background-color: #F87168;
+    /* Màu đỏ đậm */
+}
+
+.selectColor button:nth-of-type(8) {
+    background-color: #FEA362;
+    /* Màu cam đậm */
+}
+
+.selectColor button:nth-of-type(9) {
+    background-color: #F5CD47;
+    /* Màu vàng đậm */
+}
+
+.selectColor button:nth-of-type(10) {
+    background-color: #4BCE97;
+    /* Màu xanh lá đậm */
+}
+
+.modalCreatLabel .bodyModalCreat button:hover {
+    opacity: 0.6;
+}
+
+.buttonCreat {
+    background-color: #0C66E4;
+    width: 68px;
+    height: 32px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 12px;
+    margin-left: 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* moveCard  */
+.modalMoveCard {
+    width: 304px;
+    /* Sử dụng height tự động để đảm bảo nội dung không bị cắt */
+    height: auto;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.headModalMove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.headModalMove img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.headModalMove span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bodyModalMove {
+    padding: 12px;
+}
+
+.bodyModalMove span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.bodyModalMove input {
+    width: 94%;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 8px;
+    margin-bottom: 12px;
+}
+
+
+.bodyModalMove>div {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+/* Mỗi khối của List và Position */
+.bodyModalMove>div>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyModalMove>div>div span {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.bodyModalMove select {
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+
+/* Nút Move */
+.buttonMove {
+    background-color: #0C66E4;
+    width: 68px;
+    height: 32px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.buttonMove:hover {
+    opacity: 0.8;
+}

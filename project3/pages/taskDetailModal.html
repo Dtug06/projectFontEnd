@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/taskDetailModal.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="taskModal">
+        <div class="process">
+            <span>Kịch bản</span>
+            <span>in list </span>
+            <select name="" id="">
+                <option value="">In-process</option>
+            </select>
+        </div>
+        <div class="bodyTaskModal">
+            <div class="description">
+                <div>
+                    <img src="../assets/imgs/fonts/icons/func.png" alt="">
+                    <span>Description</span>
+                </div>
+                <textarea name="procesxText" id="processText" placeholder="Enter sth here!"></textarea>
+                <div class="buttonTaskModalFooter">
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+            <div class="optionMore">
+                <img src="../assets/imgs/fonts/icons/itemButtonLabel.png" alt="">
+                <img src="../assets/imgs/fonts/icons/itemButtonDates.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="detailModal-dates">
+        <div class="dates-header">
+            <div class="header-top">
+                <b>Dates</b>
+                <img src="../assets/imgs/fonts/icons/Button - Close.png" alt="" width="10px" height="10px"
+                    onclick="hideDetailModal()">
+            </div>
+            <div class="header-bottom">
+                <img src="../assets/imgs/fonts/icons/left.png" alt="" width="24px" height="24px">
+                <b>March 2025</b>
+                <img src="../assets/imgs/fonts/icons/right.png" alt="" width="24px" height="24px">
+            </div>
+        </div>
+        <div class="dates-content">
+            <div class="content-top">
+                <div class="dates-spanColor">Sun</div>
+                <div class="dates-spanColor">Mon</div>
+                <div class="dates-spanColor">Tue</div>
+                <div class="dates-spanColor">Wed</div>
+                <div class="dates-spanColor">Thu</div>
+                <div class="dates-spanColor">Fri</div>
+                <div class="dates-spanColor">Sat</div>
+                <div class="dates-backgroundgrey">23</div>
+                <div class="dates-backgroundgrey">24</div>
+                <div class="dates-backgroundgrey">25</div>
+                <div class="dates-backgroundgrey">26</div>
+                <div class="dates-backgroundgrey">27</div>
+                <div class="dates-backgroundgrey">28</div>
+                <div class="dates-backgroundblue">1</div>
+                <div class="dates-backgroundblack">2</div>
+                <div class="dates-backgroundblack">3</div>
+                <div class="dates-backgroundblack">4</div>
+                <div class="dates-backgroundblack">5</div>
+                <div class="dates-backgroundblack">6</div>
+                <div class="dates-backgroundblack">7</div>
+                <div class="dates-backgroundblack">8</div>
+                <div class="dates-backgroundblack">9</div>
+                <div class="dates-backgroundblack">10</div>
+                <div class="dates-backgroundblack">11</div>
+                <div class="dates-backgroundblack">12</div>
+                <div class="dates-backgroundblack">13</div>
+                <div class="dates-backgroundblack">14</div>
+                <div class="dates-backgroundblack">15</div>
+                <div class="dates-backgroundblack">16</div>
+                <div class="dates-backgroundblack">17</div>
+                <div class="dates-backgroundblack">18</div>
+                <div class="dates-backgroundblack">19</div>
+                <div class="dates-backgroundblack">20</div>
+                <div class="dates-backgroundblack">21</div>
+                <div class="dates-backgroundblack">22</div>
+                <div class="dates-backgroundblack">23</div>
+                <div class="dates-backgroundblack">24</div>
+                <div class="dates-backgroundblack">25</div>
+                <div class="dates-backgroundblack">26</div>
+                <div class="dates-backgroundblack">27</div>
+                <div class="dates-backgroundblack">28</div>
+                <div class="dates-backgroundblack">29</div>
+                <div class="dates-backgroundblack">30</div>
+                <div class="dates-backgroundblack">31</div>
+                <div class="dates-backgroundgrey">1</div>
+                <div class="dates-backgroundgrey">2</div>
+                <div class="dates-backgroundgrey">3</div>
+                <div class="dates-backgroundgrey">4</div>
+                <div class="dates-backgroundgrey">5</div>
+            </div>
+            <div class="content-bottom">
+                <div>
+                    <div>Start</div>
+                    <input type="checkbox"><input type="text" class="input-start"><br>
+                </div>
+                <div>
+                    <div>Due date</div>
+                    <input type="checkbox"><input type="text" placeholder="M/D/YYYY" class="input-date"><input
+                        type="text" placeholder="h:mm a" class="input-date">
+                </div>
+            </div>
+        </div>
+        <div class="dates-footer">
+            <button class="button-save">Save</button>
+            <button class="button-remove">Remove</button>
+        </div>
+    </div>
+    </div>
+    <div class="modalCreatLabel">
+        <div class="headModalCreat">
+            <img src="../assets/imgs/fonts/icons/left.png" alt="">
+            <span>Create label</span>
+            <img src="../assets/imgs/fonts/icons/Button - Close.png" alt="">
+        </div>
+        <div class="bodyModalCreat">
+            <span>Title</span>
+            <input type="text">
+            <span>Select a color</span>
+            <div class="selectColor">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <hr>
+            <button class="buttonCreat">Create</button>
+
+        </div>
+    </div>
+
+
+    <div class="modalMoveCard">
+        <div class="headModalMove">
+            <img src="../assets/imgs/fonts/icons/left.png" alt="">
+            <span>Move Card</span>
+            <img src="../assets/imgs/fonts/icons/Button - Close.png" alt="">
+        </div>
+        <div class="bodyModalMove">
+            <span>Select destination</span>
+            <span>Board</span>
+            <input type="text">
+            <div>
+                <div>
+                    <span>List</span>
+                    <select name="" id="">
+                        <option value="">In-process</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Position</span>
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
+            <button class="buttonMove">Move</button>
+        </div>
+    </div>
+</body>
+
+</html>

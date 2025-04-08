@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giao diện Trello-like</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/DashBoard.css">
+    <script src="../js/dashBoard.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img id="logo" src="../assets/imgs/fonts/icons/trello-logo-full.png.png" alt="Logo" />
+        </div>
+        <div class="sreach">
+            <img src="../assets/imgs/fonts/icons/timKiem.png" alt="Search">
+            <img id="funcIcon" src="../assets/imgs/fonts/icons/func.png" alt="Function Icon">
+        </div>
+    </div>
+
+
+    <div id="mobile-menu">
+        <div class="menu-item">Boards</div>
+        <div class="menu-item">Starred Boards</div>
+        <div class="menu-item">Closed Boards</div>
+        <hr>
+        <div class="menu-item">Settings</div>
+        <div class="menu-item">Sign out</div>
+    </div>
+
+    <section>
+        <div class="container">
+            <span id="workSpaces">YOUR WORkSPACES</span>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/Vector.png" alt="Boards">
+                <span class="textIcon">Boards</span>
+            </div>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/ngoiSao.png" alt="Starred Boards">
+                <span class="textIcon">Starred Boards</span>
+            </div>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/closedBoards.png" alt="Closed Boards">
+                <span class="textIcon">Closed Boards</span>
+            </div>
+            <hr>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/settings.png" alt="Settings">
+                <span class="textIcon">Settings</span>
+            </div>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/signOut.png" alt="Sign out">
+                <span class="textIcon">Sign out</span>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="headerMain">
+                <div>
+                    <img id="boards_icon" src="../assets/imgs/fonts/icons/boardsBlue.png" alt="Boards Icon">
+                    <span id="workspacess">Your Workspaces</span>
+                </div>
+                <div>
+                    <button id="share">share</button>
+                    <button id="Export">Export</button>
+                    <select name="time" id="time">
+                        <option value="">Next Day</option>
+                        <option value="">This week</option>
+                        <option value="">Next week</option>
+                        <option value="">Next month</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bodymain">
+                <div class="board">
+                    <div class="creatNewBoard">
+                        <div class="buttonCreat">Creat new board</div>
+                    </div>
+
+                </div>
+                <div class="windowNewBoard">
+                    <div class="windowCreatHeader">
+                        <span class="windowCreatHeaderSpan">Create board</span>
+                        <img src="../assets/imgs/fonts/icons/Button - Close.png" alt="Close">
+                    </div>
+
+                    <span id="backGroundWindowSpan">Background</span>
+                    <div class="itemsWindowBackGround">
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back1.png" alt="Background 1"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back2.png" alt="Background 2"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back3.png" alt="Background 3"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back4.png" alt="Background 4"></div>
+                    </div>
+
+                    <hr>
+
+                    <div class="colorWindow">
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color1.png" alt="Color 1">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color2.png" alt="Color 2">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color3.png" alt="Color 3">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color4.png" alt="Color 4">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color5.png" alt="Color 5">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color6.png" alt="Color 6">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="windowFooter">
+                        <span id="board_title">Board title</span>
+                        <div>
+
+                            <input type="text" id="text_board_title" placeholder="E.g. Abcxyz..." />
+                            <span>👋 Please provide a valid board title</span>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="buttonFooter">
+                        <button id="close">Close</button>
+                        <button id="create">Create</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="windowUpdateBoard">
+                    <div class="windowUpdateHeader">
+                        <span class="windowUpdateHeaderSpan">Update board</span>
+                        <img src="../assets/imgs/fonts/icons/Button - Close.png" alt="Close">
+                    </div>
+
+                    <span id="backGroundWindowSpan">Background</span>
+                    <div class="itemsWindowBackGround">
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back1.png" alt="Background 1"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back2.png" alt="Background 2"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back3.png" alt="Background 3"></div>
+                        <div class="backGound"><img src="../assets/imgs/fonts/icons/back4.png" alt="Background 4"></div>
+                    </div>
+
+                    <hr>
+
+                    <div class="colorWindow">
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color1.png" alt="Color 1">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color2.png" alt="Color 2">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color3.png" alt="Color 3">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color4.png" alt="Color 4">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color5.png" alt="Color 5">
+                        </div>
+                        <div class="colorBackGround"><img src="../assets/imgs/fonts/icons/color6.png" alt="Color 6">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="windowFooter">
+                        <span id="board_title_update">Board title</span>
+                        <div>
+                            <!-- Sử dụng input để nhập tiêu đề board -->
+                            <input type="text" id="text_board_title_update" placeholder="E.g. Abcxyz..." />
+                            <span>👋 Please provide a valid board title</span>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="buttonFooter">
+                        <button id="close_update">Close</button>
+                        <button id="update">Update</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footerMain">
+                <div class="textFooterMain">
+                    <img src="../assets/imgs/fonts/icons/ngoisaoDen.png" alt="Starred Icon">
+                    <span>Starred Boards</span>
+                </div>
+                <div class="itemsFooter">
+                    <div class="itemsImportantBoards">
+                        <span>Important Board 01</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var funcIcon = document.getElementById('funcIcon');
+            var mobileMenu = document.getElementById('mobile-menu');
+            funcIcon.addEventListener('click', function (e) {
+                e.stopPropagation();
+                mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function (e) {
+                if (e.target !== mobileMenu && !mobileMenu.contains(e.target) && e.target !== funcIcon) {
+                    mobileMenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

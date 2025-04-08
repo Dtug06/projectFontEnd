@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.error {
+    display: none;
+    width: 270px;
+    height: 106px;
+    background-color: #FFE5E8;
+    border-radius: 10px;
+    margin-top: 22px;
+    margin-left: 26px;
+    padding: 16px;
+    gap: 24px;
+
+}
+
+#textError {
+    width: 267px;
+    height: 74px;
+}
+
+.alertError {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 290px;
+    height: 58px;
+    background-color: #E5FFF0;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.successSignIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 290px;
+    height: 58px;
+    background-color: #E5FFF0;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.formSignIn {
+    position: absolute;
+    width: 298px;
+    height: 441.14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#trello {
+    width: 150px;
+    height: 43.55px;
+    margin-left: 74px;
+}
+
+#signInText {
+    width: 164.15px;
+    height: 33px;
+    margin-top: 66.55px
+}
+
+#email {
+    width: 296px;
+    height: 56px;
+    margin-top: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #DEE2E6;
+
+}
+
+#password {
+    width: 296px;
+    height: 56px;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #DEE2E6;
+}
+
+#remind {
+    width: 298px;
+    height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #0D6EFD;
+    color: white;
+    width: 298px;
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid #0D6EFD;
+    margin-top: 5px;
+}
+
+#private {
+    position: absolute;
+    color: #212529BF;
+    font-size: 16px;
+    width: 191.04px;
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    top: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .successSignIn,
+    .error {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .formSignIn {
+        position: relative;
+        width: 90%;
+        height: auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px 0;
+    }
+}

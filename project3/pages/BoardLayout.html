@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Trello-like</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/BoardLayout.css">
+    <script src="../js/boardLayout.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img id="logo" src="../assets/imgs/fonts/icons/trello-logo-full.png.png" alt="Logo">
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <span id="workSpaces">YOUR WORKSPACES</span>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/Vector.png" alt="Boards">
+                <span class="textIcon">Boards</span>
+            </div>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/ngoiSao.png" alt="Starred Boards">
+                <span class="textIcon">Starred Boards</span>
+            </div>
+            <div class="items">
+                <img class="icon" src="../assets/imgs/fonts/icons/closedBoards.png" alt="Closed Boards">
+                <span class="textIcon">Closed Boards</span>
+            </div>
+            <hr>
+            <div class="boards">
+                <span>Your boards</span>
+                <img src="../assets/imgs/fonts/icons/add.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="headerMain">
+                <div>
+                    <span>This is Title Board</span>
+                    <img src="../assets/imgs/fonts/icons/ngoisaoDen.png" alt="">
+                    <button> <img src="../assets/imgs/fonts/icons/FrameBoard.png" alt="">Board</button>
+                    <span> <img src="../assets/imgs/fonts/icons/table.png" alt=""> Table</span>
+                    <img src="../assets/imgs/fonts/icons/closeThisBoard.png" alt="">
+                    <span>Close this board</span>
+                </div>
+                <div>
+                    <img src="../assets/imgs/fonts/icons/filter.png" alt="">
+                    &nbsp; Filter
+                </div>
+            </div>
+            <div class="bodyMain">
+                <div class="addList">
+                    <img src="../assets/imgs/fonts/icons/add.png" alt="">
+                    <span>Add another list</span>
+                </div>
+                <div class="addProcess">
+                    <div>
+                        <span>In-process</span>
+                        <img src="../assets/imgs/fonts/icons/collapslist.png" alt="">
+                        <img src="../assets/imgs/fonts/icons/baChamIcon.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../assets/imgs/fonts/icons/add.png" alt="">
+                        <span>Add a card </span>
+                        <img src="../assets/imgs/fonts/icons/idk.png" alt="">
+                    </div>
+                </div>
+                <div class="toDoList">
+                    <span>To do list</span>
+                    <img src="../assets/imgs/fonts/icons/idk.png" alt="">
+                </div>
+                <div class="filterDropdown">
+                    <div class="containerFilter">
+                        <div class="filterHeader">
+                            <div></div>
+                            <b>Filter</b>
+                            <img src="../assets/imgs/fonts/icons/_BaseCloseButton.png" alt="" width="16px" height="16px"
+                                onclick="hide()">
+                        </div>
+                        <div class="filterContent">
+                            <h5>Keyword</h5>
+                            <input type="text" class="keyword" placeholder="Enter a keyword...">
+                            <p>Search cards, </p>
+                            <h5>Card</h5>
+                            <div class="content">
+                                <input type="checkbox" class="content-checkbox"> Marked as complete<br>
+                                <input type="checkbox" class="content-checkbox"> Not marked as complete
+                            </div>
+                            <h5>Due date</h5>
+                            <div class="content content-checkbox">
+                                <input type="checkbox" class="content-checkbox">
+                                <img src="../assets/imgs/fonts/icons/Overlay.png" alt="">
+                                <span>No dates</span>
+                            </div>
+
+                            <div class="content content-checkbox">
+                                <input type="checkbox">
+                                <img src="../assets/imgs/fonts/icons/overDue.png" alt="">
+                                <span>Overdue</span>
+                            </div>
+                            <div class="content content-checkbox">
+                                <input type="checkbox">
+                                <img src="../assets/imgs/fonts/icons/dueNext.png" alt="">
+                                <span>Due in the next day</span>
+                            </div>
+
+                            <h5>Labels</h5>
+                            <div class="content">
+                                <div class="content-noLable"><input type="checkbox"><img
+                                        src="../assets/imgs/fonts/icons/noLabel.png" alt=""> No labels</div>
+                                <div class="content-checkbox"><input type="checkbox"><button
+                                        class="buttonGreen"></button></div>
+                                <div class="content-checkbox"><input type="checkbox"><button
+                                        class="buttonYellow"></button></div>
+                                <div class="content-checkbox"><input type="checkbox"><button
+                                        class="buttonOrange"></button></div>
+                                <div class="content-checkbox"><input type="checkbox"> <select name="" id="">
+                                        <option value="">Select labels</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideBarCloseBoard">
+            <div class="alert"><img src="../assets/imgs/fonts/icons/alert.png" alt=""></div>
+            <div class="bodyAlert">
+                <span> &nbsp;&nbsp;&nbsp;Are you sure?</span>
+                <p>You won't be able to revert this!</p>
+            </div>
+            <div class="buttonFooterAlert">
+                <button>
+                    Yes, close it!
+                </button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <div id="addListModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddListModal()">&times;</span>
+                <h2>Thêm mới danh sách</h2>
+                <input type="text" id="listTitle" placeholder="Nhập tên danh sách...">
+                <button onclick="submitNewList()">Tạo danh sách</button>
+            </div>
+        </div>
+        <div id="addCardModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddCardModal()">&times;</span>
+                <h2>Thêm mới thẻ</h2>
+                <input type="text" id="cardTitle" placeholder="Nhập tiêu đề thẻ...">
+                <textarea id="cardDescription" placeholder="Mô tả chi tiết..."></textarea>
+                <button onclick="submitNewCard()">Tạo thẻ</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

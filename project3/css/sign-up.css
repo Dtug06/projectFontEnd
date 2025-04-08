@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.error {
+    position: relative;
+    width: 512px;
+    height: 148px;
+    background-color: #FFE5E8;
+    border-radius: 10px;
+    padding: 16px;
+    gap: 24px;
+}
+
+.successSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 299px;
+    height: 58px;
+    background-color: #E5FFF0;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.formSignUp {
+    position: absolute;
+    width: 298px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#trello {
+    width: 150px;
+    height: 43.55px;
+    margin-left: 74px;
+}
+
+#signUpText {
+    width: 164.15px;
+    height: 33px;
+    margin-top: 66.55px;
+}
+
+#email {
+    width: 296px;
+    height: 56px;
+    margin-top: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #DEE2E6;
+}
+
+#username {
+    width: 296px;
+    height: 56px;
+    border: 1px solid #DEE2E6;
+}
+
+#password {
+    width: 296px;
+    height: 56px;
+    border-top: none;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #DEE2E6;
+}
+
+button {
+    background-color: #0D6EFD;
+    color: white;
+    width: 298px;
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid #0D6EFD;
+    margin-top: 5px;
+}
+
+#private {
+    position: absolute;
+    color: #212529BF;
+    font-size: 16px;
+    width: 191.04px;
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    top: 338px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .successSignUp,
+    .error {
+        display: none;
+    }
+
+    .formSignUp {
+        position: relative;
+        width: 90%;
+        height: auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px 0;
+    }
+}

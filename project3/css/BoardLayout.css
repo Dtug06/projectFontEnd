@@ -1,0 +1,506 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 240px;
+    height: 48px;
+    border-right: 1px solid rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+#logo {
+    width: 80px;
+    height: 16px;
+    margin-left: 16px;
+}
+
+section {
+    display: flex;
+    height: calc(100vh - 48px);
+}
+
+.container {
+    width: 255px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: relative;
+}
+
+#workSpaces {
+    display: block;
+    margin: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container .items {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.container .items:hover {
+    background-color: #f0f0f0;
+}
+
+.container .items img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.container .textIcon {
+    font-size: 14px;
+    color: #333;
+}
+
+.container hr {
+    margin: 8px 16px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.boards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.boards span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.boards img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1),
+        0 -3px 10px 0 rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #ccc;
+}
+
+.headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: #F1F2F4;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerMain>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.headerMain>div:first-child span:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 8px;
+}
+
+.headerMain>div:first-child img {
+    max-height: 24px;
+    margin-right: 8px;
+}
+
+.headerMain>div:first-child button {
+    display: flex;
+    align-items: center;
+    background-color: #00000080;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.headerMain>div:first-child span:not(:first-of-type) {
+    font-size: 14px;
+    color: #333;
+}
+
+.headerMain>div:last-child {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    gap: 8px;
+}
+
+.bodyMain {
+    display: flex;
+    padding: 16px;
+}
+
+.addList {
+    width: 272px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.addList:hover {
+    background-color: #f7f7f7;
+}
+
+.addProcess {
+    width: 271px;
+    height: 60px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #F1F2F4;
+}
+
+.addProcess>div:first-child {
+    width: 192px;
+    height: 32px;
+    background-color: #F1F2F4;
+    box-sizing: border-box;
+}
+
+
+.addProcess div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toDoList {
+    background-color: #F1F2F4;
+    margin-left: 10px;
+    width: 272px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.toDoList img {
+    width: 16px;
+    height: 16px;
+}
+
+.slideBarCloseBoard {
+    position: absolute;
+    width: 512px;
+    height: 341.49px;
+    top: 450px;
+    left: 400px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1),
+        0 -3px 10px 0 rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #ccc;
+}
+
+.alert {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 20px;
+}
+
+.bodyAlert {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bodyAlert span {
+    display: block;
+    width: 210px;
+    height: 36.5px;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.bodyAlert p {
+    font-size: 18px;
+}
+
+
+.buttonFooterAlert {
+    display: flex;
+    gap: 16px;
+}
+
+.buttonFooterAlert button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+}
+
+.buttonFooterAlert button:first-child {
+    width: 139px;
+    height: 40px;
+    background-color: #3085D6;
+}
+
+
+.buttonFooterAlert button:last-child {
+    width: 89px;
+    height: 40px;
+    background-color: #DD3333;
+}
+
+.filterDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #44546F;
+    margin: 20px;
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+}
+
+filter here .filterDropdown h5 {
+    font-size: 12px;
+}
+
+.container {
+    display: block;
+    background-color: white;
+    width: 384px;
+    height: 685px;
+    border-radius: 8px;
+    border: 1px solid rgb(203, 200, 200);
+    box-shadow: 5px 5px 5px #091E424F;
+}
+
+.containerFilter {
+    display: none;
+    background-color: white;
+    width: 384px;
+    height: 685px;
+    border-radius: 8px;
+    border: 1px solid rgb(203, 200, 200);
+    box-shadow: 5px 5px 5px #091E424F;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.filterContent {
+    line-height: 35px;
+    margin: 0px 15px;
+}
+
+.filterContent .keyword {
+    width: 352px;
+    height: 36px;
+    border-radius: 3px;
+    border: 2px solid #8590A2;
+}
+
+.filterContent .keyword::placeholder {
+    color: #626F86;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.filterContent .content input {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.filterContent .content img {
+    margin-right: 10px;
+}
+
+.filterContent .content .buttonGreen {
+    width: 312px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4BCE97;
+}
+
+.filterContent .content .buttonYellow {
+    width: 312px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F5CD47;
+}
+
+.filterContent .content .buttonOrange {
+    width: 312px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FEA362;
+}
+
+.filterContent .content select {
+    width: 312px;
+    height: 40px;
+    border: none;
+    color: #626F86;
+    font-size: 16px;
+}
+
+.filterContent .content-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filterContent .content-noLable {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right: 205px;
+}
+
+.filterDropdown {
+    display: block;
+    z-index: 999;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#addListModal {
+    display: none;
+}
+
+#addCardModal {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Tiêu đề modal */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    background-color: #0079bf;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.modal-content button:hover {
+    background-color: #005a8c;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
