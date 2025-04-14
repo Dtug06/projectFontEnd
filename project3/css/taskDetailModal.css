@@ -6,6 +6,8 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -74,6 +76,21 @@ body {
     margin-left: 5px;
 }
 
+.updateButtonTask {
+    margin-bottom: 4px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    color: #172B4D;
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 133px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #091E420F;
+}
+
 .buttonTaskModalFooter button:nth-of-type(1) {
     width: 55.75px;
     height: 32px;
@@ -97,6 +114,7 @@ body {
 }
 
 .detailModal-dates {
+    display: none;
     width: 304px;
     height: 560px;
     border-radius: 8px;
@@ -293,52 +311,46 @@ body {
 
 .selectColor button:nth-of-type(1) {
     background-color: #DFD8FD;
-    /* Màu tím nhạt */
 }
 
 .selectColor button:nth-of-type(2) {
     background-color: #FFD5D2;
-    /* Màu đỏ nhạt */
 }
 
 .selectColor button:nth-of-type(3) {
     background-color: #FEDEC8;
-    /* Màu cam nhạt */
 }
 
 .selectColor button:nth-of-type(4) {
     background-color: #F8E6A0;
-    /* Màu vàng nhạt */
 }
 
 .selectColor button:nth-of-type(5) {
     background-color: #BAF3DB;
-    /* Màu xanh lá nhạt */
 }
 
 .selectColor button:nth-of-type(6) {
     background-color: #9F8FEF;
-    /* Màu tím đậm */
 }
 
 .selectColor button:nth-of-type(7) {
     background-color: #F87168;
-    /* Màu đỏ đậm */
 }
 
 .selectColor button:nth-of-type(8) {
     background-color: #FEA362;
-    /* Màu cam đậm */
 }
 
 .selectColor button:nth-of-type(9) {
     background-color: #F5CD47;
-    /* Màu vàng đậm */
 }
 
 .selectColor button:nth-of-type(10) {
     background-color: #4BCE97;
-    /* Màu xanh lá đậm */
+}
+
+.modalCreatLabel {
+    display: none;
 }
 
 .modalCreatLabel .bodyModalCreat button:hover {
@@ -359,10 +371,10 @@ body {
 }
 
 
-/* moveCard  */
+
 .modalMoveCard {
     width: 304px;
-    /* Sử dụng height tự động để đảm bảo nội dung không bị cắt */
+    display: none;
     height: auto;
     border-radius: 8px;
     background-color: #FFFFFF;

@@ -152,6 +152,7 @@ section {
 }
 
 .bodymain {
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -163,9 +164,10 @@ section {
 }
 
 .windowNewBoard {
-    position: relative;
+    position: absolute;
     flex-wrap: wrap;
     display: none;
+    left: 400px;
     width: 498px;
     height: 514px;
     border-radius: 8px;
@@ -492,7 +494,7 @@ section {
     color: #333;
 }
 
-
+/* fix heree */
 #mobile-menu {
     display: none;
     position: absolute;
@@ -506,7 +508,7 @@ section {
     z-index: 1000;
 }
 
-#mobile-menu .menu-item {
+.funfun #mobile-menu .menu-item {
     padding: 8px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
@@ -548,10 +550,16 @@ section {
         gap: 8px;
         flex-wrap: nowrap;
     }
+
+    .funcIcon {
+        display: block;
+    }
 }
 
-/* edit boardboard */
-/* Thêm vào DashBoard.css */
+.board {
+    flex-wrap: wrap;
+}
+
 .board-item {
     height: 100px;
     width: 200px;
