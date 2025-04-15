@@ -108,3 +108,16 @@ button {
         margin: 20px 0;
     }
 }
+
+#errorContainer {
+    margin-top: 10px;
+    display: none;
+}
+
+.error-message {
+    color: #d8000c;
+    background-color: #ffd2d2;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}

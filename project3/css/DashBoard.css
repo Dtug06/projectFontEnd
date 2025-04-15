@@ -294,19 +294,18 @@ section {
     border: none;
 }
 
-\updateWindow .windowUpdateBoard {
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
+
 
 .windowUpdateBoard {
-    position: relative;
+    position: absolute;
+    flex-wrap: wrap;
     display: none;
+    left: 400px;
     width: 498px;
     height: 514px;
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25),
-        0px 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .windowUpdateHeader {
@@ -561,8 +560,9 @@ section {
 }
 
 .board-item {
+    position: relative;
     height: 100px;
-    width: 200px;
+    width: 250px;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -577,6 +577,19 @@ section {
 
 }
 
+.board-item button {
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    width: 180px;
+    background-color: #2C3E5D;
+    top: 90px;
+}
+
 .board-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -587,16 +600,20 @@ section {
     color: #172b4d;
 }
 
-.edit-board {
-    background: #0079bf;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
 .edit-board:hover {
     background: #005a8c;
 }
+
+/* new */
+.backGound {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border 0.2s ease;
+}
+
+.backGound.selected {
+    border: 2px solid #1e88e5;
+}
+
+/* end */

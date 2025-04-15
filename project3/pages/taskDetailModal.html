@@ -9,7 +9,6 @@
     <style>
     </style>
 </head>
-<script src="../js/taskDetail.js"></script>
 </body>
 
 <body>
@@ -36,10 +35,9 @@
             <div class="optionMore">
                 <img src="../assets/imgs/fonts/icons/itemButtonLabel.png" alt="">
                 <div class="updateButtonTask">Update</div>
-                <img src="../assets/imgs/fonts/icons/itemButtonDates.png" alt="">
+                <img src="../assets/imgs/fonts/icons/itemButtonDates.png" alt="" id="openDateModalBtn">
+
                 <img class="delete-task-btn" src="../assets/imgs/fonts/icons/deleteButton.png" alt="Delete Task">
-
-
             </div>
         </div>
     </div>
@@ -182,6 +180,35 @@
             <button class="buttonMove">Move</button>
         </div>
     </div>
+    <div class="slideBarCloseBoard">
+        <div>
+            <div class="alert">
+                <img src="../assets/imgs/fonts/icons/alert.png" alt="" />
+            </div>
+            <div class="bodyAlert">
+                <span>&nbsp;&nbsp;&nbsp;Are you sure?</span>
+                <p>You won't be able to revert this!</p>
+            </div>
+            <div class="buttonFooterAlert">
+                <button id="confirmDelete">Yes, close it!</button>
+                <button id="cancelDelete">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal thông báo -->
+    <div id="customAlert" class="alert-modal">
+        <h3>Thông Báo</h3>
+        <p id="alertMessage">Nội dung thông báo</p>
+        <button class="btn-close" id="alertCloseBtn">Đóng</button>
+    </div>
+    <!-- Modal Update Task Name -->
+    <div class="modal-update-task-name">
+        <h3>Cập nhật tên task</h3>
+        <input type="text" id="task-name-input" placeholder="Nhập tên mới cho task" />
+        <button id="update-task-name-btn">Cập nhật</button>
+        <button class="btn-cancel" id="cancel-update-btn">Hủy</button>
+    </div>
+    <script src="../js/taskDetail.js"></script>
 </body>
 
 </html>

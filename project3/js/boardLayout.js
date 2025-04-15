@@ -1,15 +1,38 @@
-// File: boardLayout.js
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const boardId = urlParams.get('boardId');
-    const closeBoardBtn = document.querySelector('img[alt="Close this board"]').closest('div');
+    const deleteBoardBtn = document.querySelector('.delete-board-btn');
+    const backToDashboardBtn = document.querySelector('.back-dashboard-btn');
+
     const confirmModal = document.querySelector('.slideBarCloseBoard');
     const confirmBtn = document.querySelector('.buttonFooterAlert button:first-child');
     const cancelBtn = document.querySelector('.buttonFooterAlert button:last-child');
 
     const currentUser = JSON.parse(localStorage.getItem('currentUser')) || {};
     const board = currentUser.boards?.find(b => b.id === boardId);
+    const boardListSidebar = document.querySelector('.boardListSidebar');
+
+    const renderSidebarBoards = () => {
+        boardListSidebar.innerHTML = '';
+
+        currentUser.boards?.forEach(b => {
+            const boardItem = document.createElement('div');
+            boardItem.className = 'sidebar-board-item';
+            boardItem.textContent = b.title;
+
+            boardItem.addEventListener('click', () => {
+                window.location.href = `boardLayout.html?boardId=${b.id}`;
+            });
+
+            boardListSidebar.appendChild(boardItem);
+        });
+    };
+
+
+    renderSidebarBoards();
+
 
     if (!board) {
         alert('Board không tồn tại!');
@@ -19,10 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.headerMain span:first-of-type').textContent = board.title;
 
-    closeBoardBtn.addEventListener('click', (e) => {
+    deleteBoardBtn.addEventListener('click', (e) => {
         e.preventDefault();
         confirmModal.style.display = 'flex';
     });
+
+    backToDashboardBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'dashboard.html';
+    });
+
 
     confirmBtn.addEventListener('click', () => {
         const users = JSON.parse(localStorage.getItem('users')) || [];
@@ -210,3 +239,13 @@ document.addEventListener('DOMContentLoaded', () => {
         closeCardModal();
     });
 });
+// chuyển hươngs 
+// let derectionBoard=document.getElementById('boardsDerection');
+const boardsItem = document.getElementById('boardsDirectionItem');
+boardsItem.addEventListener('click', () => {
+    window.location.href = 'dashboard.html';
+});
+// thanh slideBar Board 
+
+
+

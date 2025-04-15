@@ -1,16 +1,18 @@
+/* -------------------------------------- Modal Task -------------------------------------- */
 .taskModal {
-    width: 769px;
-    height: 497px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
+/* -------------------------------------- Body Setup -------------------------------------- */
 body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+/* -------------------------------------- Process Section -------------------------------------- */
 .process {
     width: 700px;
     height: 58px;
@@ -20,7 +22,6 @@ body {
 
 .process span:nth-of-type(1) {
     display: block;
-
     width: 660px;
     height: 36px;
     border-radius: 4px;
@@ -43,14 +44,16 @@ body {
     background-color: #DCDFE4;
 }
 
+/* -------------------------------------- Task Modal Body -------------------------------------- */
 .bodyTaskModal {
-    width: 552px;
-    height: 359px;
+    width: 80%;
+    height: 80%;
     display: flex;
     border-radius: 5px;
     background-color: white;
 }
 
+/* -------------------------------------- Description Section -------------------------------------- */
 .description {
     margin-left: 20px;
 }
@@ -63,8 +66,8 @@ body {
 }
 
 .description textarea {
-    width: 512px;
-    height: 275px;
+    width: 1600px;
+    height: 650px;
     margin-left: 35px;
     margin-top: 10px;
     border-radius: 2px;
@@ -72,10 +75,7 @@ body {
     padding: 10px;
 }
 
-.optionMore {
-    margin-left: 5px;
-}
-
+/* -------------------------------------- Task Modal Footer -------------------------------------- */
 .updateButtonTask {
     margin-bottom: 4px;
     display: flex;
@@ -113,6 +113,7 @@ body {
     background-color: white;
 }
 
+/* -------------------------------------- Date Modal -------------------------------------- */
 .detailModal-dates {
     display: none;
     width: 304px;
@@ -126,6 +127,7 @@ body {
     left: 40%;
 }
 
+/* Header of Date Modal */
 .dates-header .header-top {
     display: flex;
     justify-content: flex-end;
@@ -137,7 +139,6 @@ body {
 .dates-header .header-top b {
     font-size: 14px;
     color: #44546F;
-
 }
 
 .dates-header .header-bottom {
@@ -151,10 +152,10 @@ body {
     color: #172B4D;
 }
 
+/* Date Content */
 .dates-content .content-top {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .dates-content .content-top div {
@@ -185,9 +186,9 @@ body {
 .dates-content .dates-backgroundblack {
     background-color: white;
     color: #172B4D;
-
 }
 
+/* Date Modal Footer */
 .content-bottom div {
     font-size: 14px;
     font-weight: 700;
@@ -215,6 +216,7 @@ body {
     padding-left: 5px;
 }
 
+/* Date Modal Buttons */
 .dates-footer .button-save {
     background-color: #0C66E4;
     font-size: 14px;
@@ -237,7 +239,9 @@ body {
     margin-top: 10px;
 }
 
+/* -------------------------------------- Label Modal -------------------------------------- */
 .modalCreatLabel {
+    display: none;
     width: 304px;
     height: 309px;
     border-radius: 8px;
@@ -245,6 +249,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Header of Label Modal */
 .headModalCreat {
     display: flex;
     width: 304px;
@@ -262,6 +267,7 @@ body {
     border-radius: 8px;
 }
 
+/* Body of Label Modal */
 .bodyModalCreat {
     width: 304px;
     height: 261px;
@@ -281,7 +287,6 @@ body {
     margin-left: 12px;
     margin-top: 12px;
     border-radius: 3px;
-    margin-top: 15px;
 }
 
 .bodyModalCreat span:nth-of-type(2) {
@@ -293,6 +298,7 @@ body {
     margin-bottom: 12px;
 }
 
+/* Color Selection */
 .selectColor {
     display: flex;
     flex-wrap: wrap;
@@ -349,14 +355,12 @@ body {
     background-color: #4BCE97;
 }
 
-.modalCreatLabel {
-    display: none;
-}
-
+/* Modal Label Hover Effect */
 .modalCreatLabel .bodyModalCreat button:hover {
     opacity: 0.6;
 }
 
+/* Create Label Button */
 .buttonCreat {
     background-color: #0C66E4;
     width: 68px;
@@ -370,8 +374,7 @@ body {
     cursor: pointer;
 }
 
-
-
+/* -------------------------------------- Move Card Modal -------------------------------------- */
 .modalMoveCard {
     width: 304px;
     display: none;
@@ -382,6 +385,7 @@ body {
     overflow: hidden;
 }
 
+/* Header of Move Card Modal */
 .headModalMove {
     display: flex;
     align-items: center;
@@ -402,6 +406,7 @@ body {
     font-weight: bold;
 }
 
+/* Body of Move Card Modal */
 .bodyModalMove {
     padding: 12px;
 }
@@ -421,14 +426,13 @@ body {
     margin-bottom: 12px;
 }
 
-
 .bodyModalMove>div {
     display: flex;
     gap: 12px;
     margin-bottom: 12px;
 }
 
-/* Mỗi khối của List và Position */
+/* Move Card List and Position Sections */
 .bodyModalMove>div>div {
     flex: 1;
     display: flex;
@@ -447,7 +451,7 @@ body {
     padding: 0 8px;
 }
 
-/* Nút Move */
+/* Move Card Button */
 .buttonMove {
     background-color: #0C66E4;
     width: 68px;
@@ -463,4 +467,193 @@ body {
 
 .buttonMove:hover {
     opacity: 0.8;
+}
+
+/* -------------------------------------- Slide Bar Close Board -------------------------------------- */
+.slideBarCloseBoard {
+    display: none;
+    /* Ẩn mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideBarCloseBoard>div {
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide Bar Close Board Alert */
+.slideBarCloseBoard .alert img {
+    width: 50px;
+    height: 50px;
+}
+
+.slideBarCloseBoard .bodyAlert {
+    margin: 20px 0;
+}
+
+.slideBarCloseBoard .bodyAlert span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.slideBarCloseBoard .bodyAlert p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Slide Bar Close Board Footer */
+.slideBarCloseBoard .buttonFooterAlert {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.slideBarCloseBoard .buttonFooterAlert button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.slideBarCloseBoard .buttonFooterAlert button:hover {
+    opacity: 0.8;
+}
+
+.slideBarCloseBoard .buttonFooterAlert button#confirmDelete {
+    background-color: #e74c3c;
+    /* đỏ */
+    color: #fff;
+}
+
+.slideBarCloseBoard .buttonFooterAlert button#cancelDelete {
+    background-color: #bdc3c7;
+    color: #333;
+}
+
+/* -------------------------------------- Alert Modal -------------------------------------- */
+.alert-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.alert-modal h3 {
+    margin: 0;
+    color: #333;
+}
+
+.alert-modal p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.alert-modal .btn-close {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.alert-modal .btn-close:hover {
+    background-color: #0056b3;
+}
+
+/* -------------------------------------- Modal Update Task Name -------------------------------------- */
+.modal-update-task-name {
+    display: none;
+    /* Ẩn modal mặc định */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.modal-update-task-name h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.modal-update-task-name input {
+    width: 95%;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.modal-update-task-name button {
+    width: 100%;
+    height: 36px;
+    background-color: #0C66E4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-update-task-name button:hover {
+    background-color: #0047a7;
+}
+
+.modal-update-task-name .btn-cancel {
+    background-color: #bdc3c7;
+    margin-top: 10px;
+}
+
+.modal-update-task-name .btn-cancel:hover {
+    background-color: #95a5a6;
 }
